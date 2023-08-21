@@ -1,10 +1,13 @@
 import './App.css';
+import Container from '@mui/material/Container';
+import FormSignUp from './components/FormSignUp';
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <Container component="section" maxWidth="sm" >
+      <h1>Formulario registro</h1>
+      <FormSignUp/>
+    </Container>
   );
 }
 
