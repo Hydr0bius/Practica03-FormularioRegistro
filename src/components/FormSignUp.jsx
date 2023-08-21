@@ -1,6 +1,9 @@
 import React from 'react'
 import { Button } from '@mui/material';
 import TextField from '@mui/material/TextField';
+import Switch from '@mui/material/Switch';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 function FormSignUp (){
     return(
@@ -26,10 +29,10 @@ function FormSignUp (){
                 variant="standard" 
                 fullWidth
                 margin='normal' />
-            <label>Promociones</label>
-            <input type="checkbox" />
-            <label>Novedades</label>
-            <input type="checkbox" />
+            <FormGroup>
+                <FormControlLabel control={<Switch defaultChecked/>} label="Promociones" />
+                <FormControlLabel control={<Switch defaultChecked/>} label="Novedades" />
+            </FormGroup>
             <Button variant='contained'>Registrarse</Button>
         </form>
     )
